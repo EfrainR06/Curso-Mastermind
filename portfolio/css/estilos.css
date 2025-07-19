@@ -151,7 +151,7 @@ a:hover{
     margin: 0 5px 5px 0;
     border-bottom: 1px solid #ffc900;
 }   
-.card img{
+.card img, .card iframe{
     border-radius: 15px 15px 0px 0px;
 }
 button{
