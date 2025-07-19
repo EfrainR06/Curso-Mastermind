@@ -36,6 +36,31 @@ p{
 #portafolio{
     border-top:1px solid #ffc900;
 }
+#sobremi{
+    display:grid;
+    grid-template-columns: 250px 1fr;
+}
+#sobremi h2{
+    margin-bottom: 15px;
+}
+#sobremi .masinfo{
+    margin-top: 15px;
+}
+#sobremi .masinfo button{
+ padding-top: 5px;
+ padding-bottom: 5px;
+ padding-left: 30px;
+ padding-right: 30px;
+}
+.filaportfolio{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px 30px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
 #inicio{
     background-image: url("../images/inicio.png");
     background-repeat: no-repeat;
@@ -95,4 +120,141 @@ a{
 }
 a:hover{
     color: #ffc900;
+}
+.card{
+    width: 250px;
+    background-color: #191919;
+    border-radius: 15px;
+}
+.card h3{
+    color: #ffc900;
+}
+.card h4{
+    margin: 0 5px 5px 0;
+}
+.card h3, .card h4, .card p,.card .masinfo{
+    padding: 0 15px;
+}
+.card .masinfo{
+    margin: 15px 0px 15px 0px; 
+    height: 26px;
+}
+.masinfo button{
+    background-color: #ffc900;
+    font-weight: 600;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 5px;
+    padding: 5px;
+}
+.card .sep{
+    margin: 0 5px 5px 0;
+    border-bottom: 1px solid #ffc900;
+}   
+.card img{
+    border-radius: 15px 15px 0px 0px;
+}
+button{
+    border-radius: 10px;
+}
+.card button{
+    margin-top: 5px;
+    padding: 5px;
+}
+.card .masinfo button{
+    float: right;
+}
+/* Grids de experiencia */
+.gridexp{
+    display: grid;
+    grid-template-columns: repeat(3,350px);
+    grid-gap: 10px;
+    justify-content: space-between;
+    align-content: space-around;
+}
+.cardexp{
+    background-color: #222;
+    border-radius: 15px;
+    color: white;
+    padding: 10px 15px;
+}
+.cardexp h2{
+    margin-bottom: 5px;
+}
+.cardexp h3{
+    margin-bottom: 20px;
+}
+.cardexp p{
+    margin-bottom: 20px;
+}
+.cardexp ul{
+    display: flex;
+    justify-content: flex-end;
+}
+.cardexp ul li{
+    margin-right: 10px;
+}
+.cardexp li{
+    height: 30px;
+}
+
+/* Estilos para la sección de contacto */
+#contacto{
+    background-color: #ffc900;
+    color: #222;
+}
+
+#contacto h2, #contacto h3{
+    color: #222;
+}
+
+/* Estilos para el formulario de contacto */
+.itemform{
+    margin-bottom: 15px;
+}
+
+.itemform label{
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.itemform input, .itemform textarea{
+    width: 100%;
+    max-width: 400px;
+    padding: 8px;
+    border: 1px solid #222;
+    border-radius: 5px;
+    background-color: white;
+    color: #222;
+}
+
+.itemform input[type="submit"]{
+    background-color: #222;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    width: auto;
+    padding: 10px 20px;
+}
+
+.itemform input[type="submit"]:hover{
+    background-color: #333;
+}
+
+/* Estilos para el footer */
+footer{
+    background-color: #222;
+    color: white;
+    padding: 20px 100px;
+}
+
+footer ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .logo img{
+    height: 40px;
 }
